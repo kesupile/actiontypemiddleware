@@ -1,0 +1,32 @@
+{
+  "name": "actiontypemiddleware",
+  "version": "1.0.0",
+  "description":
+    "Middleware for watching actions that pass through the store and subscribing to them",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "redux",
+    "action",
+    "middleware",
+    "subscribe actions",
+    "typechecking",
+    "type"
+  ],
+  "author": "kesupile",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "redux": "^3.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kesupile/actiontypemiddleware.git"
+  }
+}
