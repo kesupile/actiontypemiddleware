@@ -6,18 +6,18 @@ This middleware allows you to subscribe to a redux-store on a case-by-case basis
 npm install ---save-dev actiontypemiddleware
 ```
 
-### Properties
-##### *middleware*
+## Properties
+### *middleware*
 (function) the main middleware function
 
-##### *subscriptions*
+### *subscriptions*
 (object) the list of subscriptions to the middleware
 
 
 
 
-### Methods
-##### *subscribe(name, type, callback)*
+## Methods
+### *subscribe(name, type, callback)*
 **name**: (string) the name of the subscription. Multiple action types can be subscribed under the same name.
 
 **type**: (string) the redux action type.
@@ -25,10 +25,10 @@ npm install ---save-dev actiontypemiddleware
 **callback**: (function) the callback function invoked whenever the subscribed action is dispatched to the store.
 The callback accepts an object of the following structure: {**timestamp**: *date in milliseconds*, **action**: *dispatched action*}
 
-##### *unsubscribe(name)*
+### *unsubscribe(name)*
 **name**: (string) the name of the subscription to remove.
 
-##### *unsubscribeAction(name, type)*
+### *unsubscribeAction(name, type)*
 **name**: (string) the name of the subscription.
 
 **type**: (string) the specific action type to unsubscribe from under this name. If there is only one action subscribed under this name then it will remove the entire subscription
