@@ -54,7 +54,7 @@ export const signOutButton = {
     },
     listner({timestamp, action}){
         console.log(`someone signed out at: ${timestamp}`)
-        console.log(`the action data is', action`)
+        console.log('the action data is', action)
     }
 }
 
