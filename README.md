@@ -19,7 +19,9 @@ npm install ---save-dev actiontypemiddleware
 ### Methods
 ##### *subscribe(name, type, callback)*
 **name**: (string) the name of the subscription. Multiple action types can be subscribed under the same name.
+
 **type**: (string) the redux action type.
+
 **callback**: (function) the callback function invoked whenever the subscribed action is dispatched to the store.
 The callback accepts an object of the following structure: {**timestamp**: *date in milliseconds*, **action**: *dispatched action*}
 
@@ -28,6 +30,7 @@ The callback accepts an object of the following structure: {**timestamp**: *date
 
 ##### *unsubscribeAction(name, type)*
 **name**: (string) the name of the subscription.
+
 **type**: (string) the specific action type to unsubscribe from under this name. If there is only one action subscribed under this name then it will remove the entire subscription
 
 
