@@ -1,8 +1,7 @@
 {
   "name": "actiontypemiddleware",
-  "version": "1.0.0",
-  "description":
-    "Middleware for watching actions that pass through the store and subscribing to them",
+  "version": "1.0.1",
+  "description": "Middleware for watching actions that pass through the store and subscribing to them",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha"
